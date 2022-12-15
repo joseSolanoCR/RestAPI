@@ -53,6 +53,7 @@ def create_item():
         "price" not in item_data
         or "store_id" not in item_data
         or "name" not in item_data
+
     ):
         abort(400, message="Bad request, ensure price, store_id and name are on the JSON payload")
     for item in items.values():
