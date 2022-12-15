@@ -27,7 +27,20 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "localhost:5000/product"
+				"url": "localhost:5000/item"
+			},
+			"response": []
+		},
+		{
+			"name": "product Copy",
+			"id": "8ad6d3b4-b684-4a18-87bb-a8fecfc47745",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:5000/store/tienda1/item"
 			},
 			"response": []
 		},
@@ -42,7 +55,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n                \"name\": \"tienda1\",\r\n                \"items\": [\r\n                    ]\r\n}",
+					"raw": "{\r\n                \"name\": \"tienda1\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -64,14 +77,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n                \"name\": \"tienda1\",\r\n                \"items\": [\r\n                    ]\r\n}",
+					"raw": "{\r\n      \"store_id\": \"b569c9af923a4d4cbab505260581d4b6\",\r\n     \"name\": \"palopiso\",\r\n     \"price\": 100\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "localhost:5000/store"
+				"url": "localhost:5000/item"
 			},
 			"response": []
 		}
