@@ -26,7 +26,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "localhost:5000/product"
 			},
 			"response": []
 		}
