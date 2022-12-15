@@ -40,7 +40,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "localhost:5000/product"
+				"url": "localhost:5000/store/tienda1/item"
 			},
 			"response": []
 		},
