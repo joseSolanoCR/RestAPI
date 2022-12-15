@@ -77,14 +77,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n                \"name\": \"palopiso\",\r\n                \"price\": 100\r\n}",
+					"raw": "{\r\n      \"store_id\": \"b569c9af923a4d4cbab505260581d4b6\",\r\n     \"name\": \"palopiso\",\r\n     \"price\": 100\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "localhost:5000/store/tienda1/item"
+				"url": "localhost:5000/item"
 			},
 			"response": []
 		}
