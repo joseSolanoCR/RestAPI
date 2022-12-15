@@ -7,14 +7,14 @@
 	"item": [
 		{
 			"name": "getStores",
-			"_postman_id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
+			"id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": "localhost:5000/store"
 			},
 			"response": []
 		}
