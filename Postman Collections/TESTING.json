@@ -1,0 +1,22 @@
+{
+	"info": {
+		"_postman_id": "e3c14ddf-52ff-4cc7-88c4-f81220e30808",
+		"name": "RESTAPI FLASK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getStores",
+			"_postman_id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
