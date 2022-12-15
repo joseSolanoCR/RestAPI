@@ -55,7 +55,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n                \"name\": \"tienda1\",\r\n                \"items\": [\r\n                    ]\r\n}",
+					"raw": "{\r\n                \"name\": \"tienda1\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
