@@ -30,6 +30,18 @@
 				"url": "localhost:5000/product"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "4831cfb3-f201-442f-bba7-ed91b2970bcf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
