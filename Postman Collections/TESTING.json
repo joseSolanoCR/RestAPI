@@ -27,6 +27,19 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": "localhost:5000/store/prueba1/item"
+			},
+			"response": []
+		},
+		{
+			"name": "product Copy",
+			"id": "8ad6d3b4-b684-4a18-87bb-a8fecfc47745",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
 				"url": "localhost:5000/product"
 			},
 			"response": []
