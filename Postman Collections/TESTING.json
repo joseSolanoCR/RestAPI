@@ -19,7 +19,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "localhost:5000/product",
 			"id": "85c198d9-0391-4c38-b285-b6567cc0cb48",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
