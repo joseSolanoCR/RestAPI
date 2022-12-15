@@ -52,6 +52,28 @@
 				"url": "localhost:5000/store"
 			},
 			"response": []
+		},
+		{
+			"name": "addItemToStore",
+			"id": "057817c9-554e-4af1-bf07-b20e3e69e0cb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"name\": \"tienda1\",\r\n                \"items\": [\r\n                    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/store"
+			},
+			"response": []
 		}
 	]
 }
