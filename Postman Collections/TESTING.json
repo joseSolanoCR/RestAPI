@@ -32,7 +32,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "addStore",
 			"id": "4831cfb3-f201-442f-bba7-ed91b2970bcf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
