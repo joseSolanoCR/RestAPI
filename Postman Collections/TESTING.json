@@ -96,6 +96,19 @@
 						"url": "http://172.17.0.2:5000/item/item_id"
 					},
 					"response": []
+				},
+				{
+					"name": "delete Copy",
+					"id": "a712566f-417e-4350-a885-7130ab4507e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://172.17.0.2:5000/item/item_id"
+					},
+					"response": []
 				}
 			],
 			"id": "bab20c4b-f5dc-47a3-90a3-eace265c1576"
