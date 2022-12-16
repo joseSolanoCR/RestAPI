@@ -48,21 +48,44 @@
 		},
 		{
 			"name": "products",
-			"item": [],
+			"item": [
+				{
+					"name": "product",
+					"id": "85c198d9-0391-4c38-b285-b6567cc0cb48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:5000/item"
+					},
+					"response": []
+				},
+				{
+					"name": "addItem",
+					"id": "057817c9-554e-4af1-bf07-b20e3e69e0cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"store_id\": \"b569c9af923a4d4cbab505260581d4b6\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5000/item"
+					},
+					"response": []
+				}
+			],
 			"id": "bab20c4b-f5dc-47a3-90a3-eace265c1576"
-		},
-		{
-			"name": "product",
-			"id": "85c198d9-0391-4c38-b285-b6567cc0cb48",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:5000/item"
-			},
-			"response": []
 		},
 		{
 			"name": "product Copy",
@@ -74,28 +97,6 @@
 				"method": "GET",
 				"header": [],
 				"url": "localhost:5000/store/tienda1/item"
-			},
-			"response": []
-		},
-		{
-			"name": "addItemToStore",
-			"id": "057817c9-554e-4af1-bf07-b20e3e69e0cb",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n      \"store_id\": \"b569c9af923a4d4cbab505260581d4b6\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "localhost:5000/item"
 			},
 			"response": []
 		}
