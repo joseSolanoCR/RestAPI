@@ -7,21 +7,49 @@
 	"item": [
 		{
 			"name": "Stores",
-			"item": [],
+			"item": [
+				{
+					"name": "getStores",
+					"id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:5000/store"
+					},
+					"response": []
+				},
+				{
+					"name": "addStore",
+					"id": "4831cfb3-f201-442f-bba7-ed91b2970bcf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"name\": \"tienda1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5000/store"
+					},
+					"response": []
+				}
+			],
 			"id": "ca11f047-d43b-4a5b-94a9-cfa45039677b"
 		},
 		{
-			"name": "getStores",
-			"id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:5000/store"
-			},
-			"response": []
+			"name": "New Folder",
+			"item": [],
+			"id": "bab20c4b-f5dc-47a3-90a3-eace265c1576"
 		},
 		{
 			"name": "product",
@@ -46,28 +74,6 @@
 				"method": "GET",
 				"header": [],
 				"url": "localhost:5000/store/tienda1/item"
-			},
-			"response": []
-		},
-		{
-			"name": "addStore",
-			"id": "4831cfb3-f201-442f-bba7-ed91b2970bcf",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n                \"name\": \"tienda1\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "localhost:5000/store"
 			},
 			"response": []
 		},
