@@ -98,7 +98,7 @@
 					"response": []
 				},
 				{
-					"name": "delete Copy",
+					"name": "Update Item",
 					"id": "a712566f-417e-4350-a885-7130ab4507e7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
