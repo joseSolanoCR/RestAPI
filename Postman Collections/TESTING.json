@@ -122,22 +122,22 @@
 						"url": "http://172.17.0.2:5000/item/item_id"
 					},
 					"response": []
+				},
+				{
+					"name": "getItem",
+					"id": "8ad6d3b4-b684-4a18-87bb-a8fecfc47745",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:5000/store/tienda1/item"
+					},
+					"response": []
 				}
 			],
 			"id": "bab20c4b-f5dc-47a3-90a3-eace265c1576"
-		},
-		{
-			"name": "product Copy",
-			"id": "8ad6d3b4-b684-4a18-87bb-a8fecfc47745",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:5000/store/tienda1/item"
-			},
-			"response": []
 		}
 	]
 }
