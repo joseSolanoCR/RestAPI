@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "ca11f047-d43b-4a5b-94a9-cfa45039677b"
+		},
+		{
 			"name": "getStores",
 			"id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
 			"protocolProfileBehavior": {
