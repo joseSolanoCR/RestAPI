@@ -132,7 +132,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "localhost:5000/store/tienda1/item"
+						"url": "localhost:5000/item/item_id"
 					},
 					"response": []
 				}
