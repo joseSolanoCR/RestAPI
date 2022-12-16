@@ -83,6 +83,18 @@
 						"url": "localhost:5000/item"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "ef6c2990-4678-448a-9c0a-6ee0d05ddd36",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "bab20c4b-f5dc-47a3-90a3-eace265c1576"
