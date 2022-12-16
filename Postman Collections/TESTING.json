@@ -42,6 +42,19 @@
 						"url": "localhost:5000/store"
 					},
 					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "38542626-26a4-4c51-94b4-73202d819a26",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://172.17.0.2:5000/item/item_id"
+					},
+					"response": []
 				}
 			],
 			"id": "ca11f047-d43b-4a5b-94a9-cfa45039677b"
