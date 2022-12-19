@@ -52,7 +52,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://172.17.0.2:5000/store/store_id"
+						"url": "localhost:5000/store/fa7af73bdbfd478da13f200958354293"
 					},
 					"response": []
 				}
