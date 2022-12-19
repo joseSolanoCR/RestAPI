@@ -86,14 +86,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n      \"store_id\": \"764c960016bd4dfcb7a3f5a6d9681844\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
+							"raw": "{\r\n      \"store_id\": \"13140795843f45cebe3c44449dca5572\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "localhost:5000/item"
+						"url": "localhost:5005/item"
 					},
 					"response": []
 				},
