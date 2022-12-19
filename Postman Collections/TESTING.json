@@ -119,7 +119,16 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
-						"url": "http://172.17.0.2:5000/item/item_id"
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"otra escoba\",\r\n    \"price\": 150\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5000/item/dacebe3068764371911778d1d8a302a3"
 					},
 					"response": []
 				},
