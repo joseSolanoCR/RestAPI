@@ -71,6 +71,13 @@ def create_item():
     return item, 201
 
 
+@app.delete("/item/<string:item_id>")
+def delete_item(item_id):
+    try:
+        del items[item_id]
+        return{"message": "Item deleted"}
+    except KeyError:
+        abort(404, message="Item not found")
 
 
 if __name__ == "__main__":
