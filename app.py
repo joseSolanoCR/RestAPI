@@ -79,6 +79,27 @@ def delete_item(item_id):
     except KeyError:
         abort(404, message="Item not found")
 
+@app.put("/item/<string:item_id>")
+def update_item(item_id):
+    item_data= request.get_json()
+    if "price" not in item_data or "name" not in item_data:
+        abort(400, message="Bad request, ensure price, store_id and name are on the JSON payload")
+    try:
+        item = items[item_id]
+        item |= item_data
+        return item
+    except KeyError:
+        abort(400, message="Item not found")
+
+
+@app.delete("/store/<string:store_id>")
+def delete_store(store_id):
+    try:
+        del stores[store_id]
+        return{"message": "store deleted"}
+    except KeyError:
+        abort(404, message="store not found")
+
 
 if __name__ == "__main__":
     app.run(host='localhost', debug=True)
