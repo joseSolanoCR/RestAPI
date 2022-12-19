@@ -29,7 +29,7 @@ def get_item(item_id):
     try:
         return items[item_id]
     except KeyError:
-        abort(404, message= "Item not found")
+        abort(404, message= "Item not found1")
 
 
 @app.post("/store")
@@ -64,7 +64,7 @@ def create_item():
             abort(400, message="Item already Exists")
 
     if item_data["store_id"] not in stores:
-        abort(404, message= "Store not found")
+        abort(404, message= "Store not found1")
     item_id = uuid.uuid4().hex
     item = {**item_data, "id": item_id}
     items[item_id] = item
