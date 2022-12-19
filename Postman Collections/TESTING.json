@@ -106,7 +106,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://172.17.0.2:5000/item/item_id"
+						"url": "http://localhost:5000/item/93e4b03ee3b54c52be08b85ad61a872f"
 					},
 					"response": []
 				},
