@@ -6,87 +6,138 @@
 	},
 	"item": [
 		{
-			"name": "getStores",
-			"id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:5000/store"
-			},
-			"response": []
-		},
-		{
-			"name": "product",
-			"id": "85c198d9-0391-4c38-b285-b6567cc0cb48",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:5000/item"
-			},
-			"response": []
-		},
-		{
-			"name": "product Copy",
-			"id": "8ad6d3b4-b684-4a18-87bb-a8fecfc47745",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:5000/store/tienda1/item"
-			},
-			"response": []
-		},
-		{
-			"name": "addStore",
-			"id": "4831cfb3-f201-442f-bba7-ed91b2970bcf",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n                \"name\": \"tienda1\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+			"name": "Stores",
+			"item": [
+				{
+					"name": "getStores",
+					"id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:5000/store"
+					},
+					"response": []
 				},
-				"url": "localhost:5000/store"
-			},
-			"response": []
+				{
+					"name": "addStore",
+					"id": "4831cfb3-f201-442f-bba7-ed91b2970bcf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"name\": \"tienda1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5000/store"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "38542626-26a4-4c51-94b4-73202d819a26",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://172.17.0.2:5000/store/store_id"
+					},
+					"response": []
+				}
+			],
+			"id": "ca11f047-d43b-4a5b-94a9-cfa45039677b"
 		},
 		{
-			"name": "addItemToStore",
-			"id": "057817c9-554e-4af1-bf07-b20e3e69e0cb",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n      \"store_id\": \"b569c9af923a4d4cbab505260581d4b6\",\r\n     \"name\": \"palopiso\",\r\n     \"price\": 100\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+			"name": "Items",
+			"item": [
+				{
+					"name": "getItems",
+					"id": "85c198d9-0391-4c38-b285-b6567cc0cb48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:5000/item"
+					},
+					"response": []
 				},
-				"url": "localhost:5000/item"
-			},
-			"response": []
+				{
+					"name": "addItem",
+					"id": "057817c9-554e-4af1-bf07-b20e3e69e0cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"store_id\": \"b569c9af923a4d4cbab505260581d4b6\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:5000/item"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"id": "ef6c2990-4678-448a-9c0a-6ee0d05ddd36",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://172.17.0.2:5000/item/item_id"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Item",
+					"id": "a712566f-417e-4350-a885-7130ab4507e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://172.17.0.2:5000/item/item_id"
+					},
+					"response": []
+				},
+				{
+					"name": "getItem",
+					"id": "8ad6d3b4-b684-4a18-87bb-a8fecfc47745",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:5000/item/item_id"
+					},
+					"response": []
+				}
+			],
+			"id": "bab20c4b-f5dc-47a3-90a3-eace265c1576"
 		}
 	]
 }
