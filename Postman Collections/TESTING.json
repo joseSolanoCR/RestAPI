@@ -52,7 +52,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "localhost:5000/store/fa7af73bdbfd478da13f200958354293"
+						"url": "http://172.17.0.2:5000/store/store_id"
 					},
 					"response": []
 				}
@@ -119,16 +119,7 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"otra escoba\",\r\n    \"price\": 150\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "localhost:5000/item/dacebe3068764371911778d1d8a302a3"
+						"url": "http://172.17.0.2:5000/item/item_id"
 					},
 					"response": []
 				},
