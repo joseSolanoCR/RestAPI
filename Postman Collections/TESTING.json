@@ -86,7 +86,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n      \"store_id\": \"4bdcc57fdfef445b999f79c3770651e1\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
+							"raw": "{\r\n      \"store_id\": \"9f35bc7155d74c42bed2adecdb8b1b85\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -128,7 +128,7 @@
 								}
 							}
 						},
-						"url": "{{url}}/item/fba0678f949543f4ae1e79130f39e9b8"
+						"url": "{{url}}/item/82f100719d1442678fb846597aa70bd6"
 					},
 					"response": []
 				},
