@@ -17,7 +17,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "localhost:5005/store"
+						"url": "{{url}}/store"
 					},
 					"response": []
 				},
