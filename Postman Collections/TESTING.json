@@ -128,7 +128,7 @@
 								}
 							}
 						},
-						"url": "localhost:5005/item/93477b8b39534812b5738db264526f9b"
+						"url": "{{url}}/item/93477b8b39534812b5738db264526f9b"
 					},
 					"response": []
 				},
