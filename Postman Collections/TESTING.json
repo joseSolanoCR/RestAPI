@@ -93,7 +93,7 @@
 								}
 							}
 						},
-						"url": "localhost:5005/item"
+						"url": "{{url}}/item"
 					},
 					"response": []
 				},
