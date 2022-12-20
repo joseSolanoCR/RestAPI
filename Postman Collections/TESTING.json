@@ -86,7 +86,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n      \"store_id\": \"4bdcc57fdfef445b999f79c3770651e1\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
+							"raw": "{\r\n      \"store_id\": \"9f35bc7155d74c42bed2adecdb8b1b85\",\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
