@@ -150,7 +150,20 @@
 		},
 		{
 			"name": "tags",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "ecb0e1f7-af34-45e5-9cde-d0fbe5fb3534",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "da77a5e3-a578-42ec-97c1-12eefffd527f"
 		}
 	]
