@@ -159,7 +159,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{url}}/tag/1"
 					},
 					"response": []
 				},
@@ -187,7 +188,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Tag Name\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Tag Name 2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
