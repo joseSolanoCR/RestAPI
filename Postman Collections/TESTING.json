@@ -17,7 +17,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{url}}/store"
+						"url": "{{url}}/store/1"
 					},
 					"response": []
 				},
@@ -52,7 +52,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{url}}/store/fa7af73bdbfd478da13f200958354293"
+						"url": "{{url}}/store/1"
 					},
 					"response": []
 				}
@@ -106,7 +106,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{url}}/item/93e4b03ee3b54c52be08b85ad61a872f"
+						"url": "{{url}}/item/1"
 					},
 					"response": []
 				},
@@ -147,6 +147,60 @@
 				}
 			],
 			"id": "bab20c4b-f5dc-47a3-90a3-eace265c1576"
+		},
+		{
+			"name": "tags",
+			"item": [
+				{
+					"name": "getTag",
+					"id": "ecb0e1f7-af34-45e5-9cde-d0fbe5fb3534",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/tag/1"
+					},
+					"response": []
+				},
+				{
+					"name": "getTagsInStore",
+					"id": "4a1f5a79-cdf1-43a7-bf05-a27b9087b33c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/store/1/tag"
+					},
+					"response": []
+				},
+				{
+					"name": "createTagInStore",
+					"id": "1f04698f-e427-47da-ac67-54c44b7a61b5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tag Name 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/store/1/tag"
+					},
+					"response": []
+				}
+			],
+			"id": "da77a5e3-a578-42ec-97c1-12eefffd527f"
 		}
 	]
 }
