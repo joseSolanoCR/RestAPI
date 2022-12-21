@@ -106,7 +106,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{url}}/item/93e4b03ee3b54c52be08b85ad61a872f"
+						"url": "{{url}}/item/1"
 					},
 					"response": []
 				},
