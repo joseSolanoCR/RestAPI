@@ -52,7 +52,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{url}}/store/fa7af73bdbfd478da13f200958354293"
+						"url": "{{url}}/store/1"
 					},
 					"response": []
 				}
