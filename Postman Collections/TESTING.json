@@ -17,7 +17,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{url}}/store"
+						"url": "{{url}}/store/1"
 					},
 					"response": []
 				},
