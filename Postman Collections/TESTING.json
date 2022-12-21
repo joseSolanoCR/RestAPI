@@ -152,8 +152,32 @@
 			"name": "tags",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "getTag",
 					"id": "ecb0e1f7-af34-45e5-9cde-d0fbe5fb3534",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"id": "4a1f5a79-cdf1-43a7-bf05-a27b9087b33c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"id": "1f04698f-e427-47da-ac67-54c44b7a61b5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
