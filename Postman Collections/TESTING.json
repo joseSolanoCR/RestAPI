@@ -171,7 +171,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{url}}/store/1/tag"
 					},
 					"response": []
 				},
