@@ -164,7 +164,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request Copy",
+					"name": "getTagsInStore",
 					"id": "4a1f5a79-cdf1-43a7-bf05-a27b9087b33c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
