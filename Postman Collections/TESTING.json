@@ -9,6 +9,11 @@
 			"name": "Stores",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "63bf91af-80fc-4369-953f-41bed1a284b6"
+				},
+				{
 					"name": "getStores",
 					"id": "b504b0da-f4e5-431e-98f9-7dcff664c7c1",
 					"protocolProfileBehavior": {
