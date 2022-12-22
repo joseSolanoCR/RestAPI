@@ -204,7 +204,20 @@
 		},
 		{
 			"name": "items_tags",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "15de9204-071e-418b-ba84-b2b7c8c616aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "ebc35778-faef-44ec-9959-c5a8ae6e20cd"
 		}
 	]
