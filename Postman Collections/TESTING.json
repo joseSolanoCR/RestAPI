@@ -356,6 +356,19 @@
 				},
 				{
 					"name": "login user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "26b435ec-9c6d-4943-8ebe-1836789ae2d9",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"test\", jsonData.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "e8d625ae-3528-4083-bf6c-d97153d412f8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
