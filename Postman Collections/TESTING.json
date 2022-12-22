@@ -296,7 +296,13 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/item/1/tag/1"
 					},
 					"response": []
