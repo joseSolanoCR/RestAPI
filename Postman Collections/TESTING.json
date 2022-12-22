@@ -182,7 +182,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "localhost:5000/item/item_id"
 					},
 					"response": []
