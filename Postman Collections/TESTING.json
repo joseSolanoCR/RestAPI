@@ -377,7 +377,7 @@
 					"response": []
 				},
 				{
-					"name": "logoutuser",
+					"name": "logout user",
 					"id": "a8afccef-d787-4b03-a83a-88806df97c39",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
