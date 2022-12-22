@@ -16,7 +16,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/store/1"
 					},
 					"response": []
@@ -29,10 +35,16 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n                \"name\": \"tienda1\"\r\n}",
+							"raw": "{\r\n                \"name\": \"tienda4\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -51,7 +63,13 @@
 					},
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/store/1"
 					},
 					"response": []
@@ -70,7 +88,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/item"
 					},
 					"response": []
@@ -83,7 +107,13 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n      \"store_id\": 1,\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
@@ -105,7 +135,13 @@
 					},
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/item/1"
 					},
 					"response": []
@@ -118,7 +154,13 @@
 					},
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\":\"otra escoba\",\r\n    \"price\": 150\r\n}",
@@ -140,7 +182,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "localhost:5000/item/item_id"
 					},
 					"response": []
@@ -159,7 +207,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/tag/1"
 					},
 					"response": []
@@ -172,8 +226,31 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": "{{url}}/store/1/tag"
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/store/1/tag?",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"store",
+								"1",
+								"tag"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -185,7 +262,13 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\": \"Tag Name 2\"\r\n}",
@@ -213,7 +296,13 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/item/1/tag/1"
 					},
 					"response": []
@@ -226,7 +315,13 @@
 					},
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/item/1/tag/1"
 					},
 					"response": []
