@@ -260,6 +260,28 @@
 					"response": []
 				},
 				{
+					"name": "login user",
+					"id": "e8d625ae-3528-4083-bf6c-d97153d412f8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\":\"JP\",\r\n\"password\":\"1234\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/login"
+					},
+					"response": []
+				},
+				{
 					"name": "get user",
 					"id": "6902158d-428d-47dd-a827-5265ac76e355",
 					"protocolProfileBehavior": {
