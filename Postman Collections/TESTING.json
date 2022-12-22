@@ -363,7 +363,7 @@
 								"id": "26b435ec-9c6d-4943-8ebe-1836789ae2d9",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);\r",
-									"postman.setEnvironmentVariable(\"auth\", 'Bearer ' + jsonData.token);"
+									"postman.setEnvironmentVariable(\"test\", jsonData.parse);"
 								],
 								"type": "text/javascript"
 							}
