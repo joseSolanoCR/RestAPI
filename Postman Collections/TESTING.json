@@ -363,7 +363,7 @@
 								"id": "26b435ec-9c6d-4943-8ebe-1836789ae2d9",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);\r",
-									"postman.setEnvironmentVariable(\"test\", jsonData.parse);"
+									"postman.setEnvironmentVariable(\"auth\", 'Bearer ' + jsonData.token);"
 								],
 								"type": "text/javascript"
 							}
@@ -386,6 +386,47 @@
 							}
 						},
 						"url": "{{url}}/login"
+					},
+					"response": []
+				},
+				{
+					"name": "login user Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "26b435ec-9c6d-4943-8ebe-1836789ae2d9",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"auth\", 'Bearer ' + jsonData.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ab2ee12b-31e7-4de5-a30f-700070a035c6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\":\"JP\",\r\n\"password\":\"1234\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/refresh"
 					},
 					"response": []
 				},
