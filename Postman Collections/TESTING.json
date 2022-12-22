@@ -83,7 +83,13 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n      \"store_id\": 1,\r\n     \"name\": \"escoba\",\r\n     \"price\": 90\r\n}",
