@@ -206,7 +206,7 @@
 			"name": "items_tags",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "tagToItem",
 					"id": "15de9204-071e-418b-ba84-b2b7c8c616aa",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
