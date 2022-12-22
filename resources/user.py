@@ -34,6 +34,7 @@ class UserLogin(MethodView):
         user = UserModel.query.filter(
             UserModel.username == user_data["username"]
         ).first()
+
         if user and pbkdf2_sha256.verify(user_data["password"], user.password):
             access_token = create_access_token(identity=user.id)
             return {"access token": access_token}
