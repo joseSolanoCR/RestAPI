@@ -154,13 +154,7 @@
 					},
 					"request": {
 						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{auth}}",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\":\"otra escoba\",\r\n    \"price\": 150\r\n}",
@@ -182,13 +176,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{auth}}",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": "localhost:5000/item/item_id"
 					},
 					"response": []
