@@ -262,7 +262,7 @@
 					"response": []
 				},
 				{
-					"name": "create user Copy",
+					"name": "delete user",
 					"id": "0e80a1a9-cf37-416f-8c15-1043b5ea6915",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
