@@ -267,7 +267,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{url}}/user/1"
 					},
 					"response": []
 				},
