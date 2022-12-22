@@ -58,7 +58,7 @@ def delete(self, item_id, tag_id):
     except SQLAlchemyError:
         abort(500, message="error borrando")
 
-    return {"message":"Item removed from tag" , "item": item, "tag": tag}
+    return {"message":"Item removed from tag", "item": item, "tag": tag}
 
 
 @blp.route("/tag/<string:tag_id>")

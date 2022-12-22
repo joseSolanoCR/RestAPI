@@ -41,6 +41,6 @@ class TagSchema(PlainTagSchema):
 
 
 class TagAndItemSchema(Schema):
-    message =fields.Str()
+    message = fields.Str()
     item = fields.Nested(ItemSchema)
     tag = fields.Nested(TagSchema)
