@@ -363,7 +363,7 @@
 								"id": "26b435ec-9c6d-4943-8ebe-1836789ae2d9",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);\r",
-									"postman.setEnvironmentVariable(\"test\", jsonData.parse);"
+									"postman.setEnvironmentVariable(\"auth\", 'Bearer ' + jsonData.token);"
 								],
 								"type": "text/javascript"
 							}
@@ -386,6 +386,47 @@
 							}
 						},
 						"url": "{{url}}/login"
+					},
+					"response": []
+				},
+				{
+					"name": "refresh token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "26b435ec-9c6d-4943-8ebe-1836789ae2d9",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"auth\", 'Bearer ' + jsonData.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ab2ee12b-31e7-4de5-a30f-700070a035c6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MTc0OTE2OCwianRpIjoiYmRiMzEyNTEtMGZiNi00Mzk4LWEzODMtMTVhYTUyMGYzZmZjIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOjEsIm5iZiI6MTY3MTc0OTE2OCwiZXhwIjoxNjc0MzQxMTY4LCJpc19hZG1pbiI6dHJ1ZX0.3UXO4s94K-BdMS7Okw6hYLSLRmKDzzBrINCzRqZQtCE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\":\"JP\",\r\n\"password\":\"1234\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/refresh"
 					},
 					"response": []
 				},
