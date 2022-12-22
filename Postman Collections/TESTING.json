@@ -135,7 +135,13 @@
 					},
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"url": "{{url}}/item/1"
 					},
 					"response": []
@@ -148,7 +154,13 @@
 					},
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\":\"otra escoba\",\r\n    \"price\": 150\r\n}",
