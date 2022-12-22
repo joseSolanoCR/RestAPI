@@ -248,6 +248,30 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "get user",
+					"id": "6902158d-428d-47dd-a827-5265ac76e355",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create user Copy",
+					"id": "0e80a1a9-cf37-416f-8c15-1043b5ea6915",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "e547cc2f-96cc-44f8-aa69-f7f97c3b6f00"
