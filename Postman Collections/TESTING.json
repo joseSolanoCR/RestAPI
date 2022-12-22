@@ -217,6 +217,19 @@
 						"url": "{{url}}/item/1/tag/1"
 					},
 					"response": []
+				},
+				{
+					"name": "delete tagToItem",
+					"id": "5f0386f5-bdad-49e3-9cca-de7dc01d0ebc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{url}}/item/1/tag/1"
+					},
+					"response": []
 				}
 			],
 			"id": "ebc35778-faef-44ec-9959-c5a8ae6e20cd"
