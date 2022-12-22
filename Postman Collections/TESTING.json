@@ -390,7 +390,7 @@
 					"response": []
 				},
 				{
-					"name": "login user Copy",
+					"name": "refresh token",
 					"event": [
 						{
 							"listen": "test",
