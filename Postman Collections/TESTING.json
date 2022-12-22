@@ -277,7 +277,7 @@
 								}
 							}
 						},
-						"url": "{{url}}/register"
+						"url": "{{url}}/login"
 					},
 					"response": []
 				},
