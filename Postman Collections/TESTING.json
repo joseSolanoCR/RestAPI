@@ -225,7 +225,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "DELETE",
 						"header": [],
 						"url": "{{url}}/item/1/tag/1"
 					},
