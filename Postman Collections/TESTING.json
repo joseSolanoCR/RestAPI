@@ -236,7 +236,20 @@
 		},
 		{
 			"name": "Users",
-			"item": [],
+			"item": [
+				{
+					"name": "create user",
+					"id": "21b25693-dd96-4ac2-bcd0-82dac610641c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "e547cc2f-96cc-44f8-aa69-f7f97c3b6f00"
 		}
 	]
