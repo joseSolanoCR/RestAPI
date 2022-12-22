@@ -413,7 +413,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{auth}}",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3MTc0OTE2OCwianRpIjoiYmRiMzEyNTEtMGZiNi00Mzk4LWEzODMtMTVhYTUyMGYzZmZjIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOjEsIm5iZiI6MTY3MTc0OTE2OCwiZXhwIjoxNjc0MzQxMTY4LCJpc19hZG1pbiI6dHJ1ZX0.3UXO4s94K-BdMS7Okw6hYLSLRmKDzzBrINCzRqZQtCE",
 								"type": "text"
 							}
 						],
