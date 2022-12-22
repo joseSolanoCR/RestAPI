@@ -226,8 +226,31 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": "{{url}}/store/1/tag"
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/store/1/tag?",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"store",
+								"1",
+								"tag"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text"
+								}
+							]
+						}
 					},
 					"response": []
 				},
