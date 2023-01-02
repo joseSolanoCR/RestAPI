@@ -22,12 +22,12 @@ class Item(MethodView):
     def delete(self, item_id):
         jwt = get_jwt()
         if not jwt.get("is_admin"):
-            abort(401, message="Admin privilege required")
+            abort(401, message="Se requiere nivel de Admin")
 
         item = ItemModel.query.get_or_404(item_id)
         db.session.delete(item)
         db.session.commit()
-        return {"message": "Item deleted."}
+        return {"message": "Item borrado"}
 
     @jwt_required()
     @blp.arguments(ItemUpdateSchema)
@@ -65,6 +65,6 @@ class ItemList(MethodView):
             db.session.add(item)
             db.session.commit()
         except SQLAlchemyError:
-            abort(500, message="An error occurred while inserting the item.")
+            abort(500, message="Error al insertar el item")
 
         return item

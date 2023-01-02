@@ -75,16 +75,16 @@ class Tag(MethodView):
         return tag
 
     @jwt_required()
-    @blp.response(202, description="deteles tags with no item associated", examples={"message":"tag deleted"})
-    @blp.response(404, description="tag not found")
-    @blp.response(400, description="Returned if the tag is associated to one or more items. In this case the tag is not deleted ")
+    @blp.response(202, description="Elimina un tag sin item asociado", examples={"message":"tag deleted"})
+    @blp.response(404, description="tag no encontrado")
+    @blp.response(400, description="Item no borrado, tiene mas de 1 item asociado")
     def delete(self, tag_id):
         tag = TagModel.query.get_or_404(tag_id)
         if not tag.items:
             db.session.delete(tag)
             db.session.commit()
             return {"message":"tag deleted"}
-        abort(400, message="Error borrando etiqueta, asegurese que la etiqueta no tiene items e intente de nuevo")
+        abort(400, message="Error borrando etiqueta, asegurese que el tag no tiene items e intente de nuevo")
 
 
 

@@ -17,7 +17,7 @@ class RegisterUser(MethodView):
     @blp.arguments(UserSchema)
     def post(self, user_data):
         if UserModel.query.filter(UserModel.username == user_data["username"]).first():
-            abort(409,message="User already exists")
+            abort(409,message="Usuario ya existe")
         user = UserModel(
             username=user_data["username"],
             password=pbkdf2_sha256.hash(user_data["password"])
@@ -25,7 +25,7 @@ class RegisterUser(MethodView):
         db.session.add(user)
         db.session.commit()
 
-        return {"message":"User created succesfully"}, 201
+        return {"message":"Usuario creado de forma exitosa"}, 201
 
 
 @blp.route("/login")
@@ -40,7 +40,7 @@ class UserLogin(MethodView):
             access_token = create_access_token(identity=user.id, fresh=True)
             refresh_token = create_refresh_token(identity=user.id)
             return {"token": access_token, "refresh": refresh_token}
-        abort(401, message="Invalid Credentials")
+        abort(401, message="Credenciales invalidas")
 
 
 @blp.route("/refresh")
@@ -58,7 +58,7 @@ class UserLogout(MethodView):
     def post(self):
         jti = get_jwt()["jti"]
         BLOCKLIST.add(jti)
-        return {"message": "succesfully logged out"}, 200
+        return {"message": "Logged out de forma correcta"}, 200
 
 
 @blp.route("/user/<int:user_id>")
@@ -72,4 +72,4 @@ class User(MethodView):
         user = UserModel.query.get_or_404(user_id)
         db.session.delete(user)
         db.session.commit()
-        return {"message":"User deleted"},200
+        return {"message":"Usuario borrado"},200

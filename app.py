@@ -73,7 +73,7 @@ def create_app(db_url=None):
     def invalid_token_callback(error):
         return (
             jsonify(
-                {"message": "Signature verification failed.", "error": "invalid_token"}
+                {"message": "Validación de firma fallida", "error": "invalid_token"}
             ),
             401,
         )
@@ -83,7 +83,7 @@ def create_app(db_url=None):
         return (
             jsonify(
                 {
-                    "description": "Request does not contain an access token.",
+                    "description": "La solicitud no contiene un token",
                     "error": "authorization_required",
                 }
             ),

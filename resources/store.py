@@ -24,7 +24,7 @@ class Store(MethodView):
         store = StoreModel.query.get_or_404(store_id)
         db.session.delete(store)
         db.session.commit()
-        return {"message": "Store deleted"}, 200
+        return {"message": "Tienda borrada"}, 200
 
 
 @blp.route("/store")
@@ -45,9 +45,9 @@ class StoreList(MethodView):
         except IntegrityError:
             abort(
                 400,
-                message="A store with that name already exists.",
+                message="Ya existe una tienda con este nombre",
             )
         except SQLAlchemyError:
-            abort(500, message="An error occurred creating the store.")
+            abort(500, message="Error al crear la tienda")
 
         return store
